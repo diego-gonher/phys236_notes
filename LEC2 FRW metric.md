@@ -67,9 +67,29 @@ $$
 S_k(r) = R_0 sinh(r/R_0) \hspace{0.6cm} \text{for} \hspace{0.2cm} k = -1
 $$
 
-Here, the quantity $R_0$ is called the **radius of curvature** of the universe at the present epoch.
+Here, the quantity $R_0$ is called the **radius of curvature** of the universe at the present epoch. Now, notice that if we do a change of variables $\rho = S_k(r)$, this metric can be expressed as:
+
+$$
+ds^2 = -c^2dt^2 + a^2(t) \bigg[ \frac{d\rho^2}{1-k(\rho/R_o)^2} + \rho^2d\Omega^2 \bigg]
+$$
+
+Where the last term in the brackets looks like what one gets in spherical coordinates using Euclidean space.
+
+To understand a bit better, you should now that in GR, $ds^2$ is an invariant interval between two neighboring events in spacetime separated by $dx^\mu$, where each of the four possible $dx$ correspond to the four dimensions, with $\mu=0$ being time. In general cases, $ds^2$ can be written as:
+
+$$
+ds^2 = \sum_{\mu \nu} g_{\mu\nu}dx^\mu dx^\nu
+$$
+
+Where $g_{\mu\nu}$ is known as the metric tensor, which is described by a symmetric $N\times N$ matrix that expresses the notion of distance between different points in spacetime. Some things to consider about metrics:
+
+- The metric determines the geodesics, which are the trajectories of free-falling objects
+- $ds^2 = 0$ determines how light moves across spacetime
+- Usually metrics are complicated, but that is not the case for a homogeneous and isotropic model of the universe.
 
 ## Building Intuation
+
+Look at the notes for the entire explanation, but the main idea here is to try and visualize the FWR metric with lower dimensional analogs. Another important thing is that $k$ describes the geometry of the universe being modeled, with $k=-1$ corresponding to a hyperbolic space, $k=0$ corresponding to a flat space and $k=1$ to a spherical space. Observations show that $k=0$ to a high precision in our universe, so we will stick to this value for most of the course. 
 
 # Proper Distance, Redshift, and Hubble Drag
 ## Proper Distance
