@@ -179,8 +179,33 @@ Which shouldn't be surprising. Notice that in this case $r$ did have a non-zero 
 
 ![[lec2fig1.png]]
 
-Here, we have a fundamental observer looking at an object X that moves with a peculiar velocity at time $t$ and a slightly different peculiar velocity at time $t+dt$. 
+Here, we have a fundamental observer looking at an object X that moves with a peculiar velocity at time $t$ and a slightly different peculiar velocity at time $t+dt$. We can calculate the effect that the expanding universe has in the object's peculiar velocity by first realizing that the proper velocity $v_p$ must be the same from the fundamental fundamental observer's POV, since there are no forces acting on it from their perspective. That is, $v_p(t) = v_p(t+dt)$. Furthermore, at $t=0$, $v_p(t=0) = v_{pec}(t=0)$ since it is at the fundamental observer's position. 
 
+However, at time $t + dt$, we have
+
+$$
+v_p(t+dt) = v_{exp}(t+dt)+ v_{pec}(t+dt) = H(t+dt)dl + v_{pec}(t+dt) \approx H(t)v_{pec}dt + v_{pec}(t+dt)
+$$
+
+Using our previous observation about the proper velocities at the different times, we have that 
+
+$$
+v_{pec}(t+dt) - v_{pec} = -H(t)v_{pec}(t)dt
+$$
+
+Reorganizing gives us:
+
+$$
+\frac{dv_{pec}}{dt} = -Hv_{pec}
+$$
+
+Which means that from the perspective of the fundamental observer, the peculiar velocity of the object decreases with time. This is known as the **Hubble Drag**. As seen on the lecture notes, this result can be used to demonstrate that:
+
+$$
+v_{pec} \propto a^{-1}
+$$
+
+Using GR, this result extends to momentum: $p \propto a^{-1}$. 
 
 # Horizons
 ## Particle Horizon
