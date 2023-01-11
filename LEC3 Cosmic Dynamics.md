@@ -94,6 +94,39 @@ Clearly, the curvature is related to the energy contents, with the three possibi
 The current measurements of the density parameter indicate that $\Omega_0 = 0.999 \pm 0.002$, meaning that our universe is flat, which means that we get to focus on the simplest form of the FRW metric.
 
 # The Fluid Equation
+The Friedmann Equation encapsulates the idea of energy conservation in an expanding universe. Now let us consider another classical manifestation of energy conservation, the first law of thermodynamics:
+
+$$
+dQ = TdS = dU + PdV
+$$
+
+Where $dQ$ is the heat flow, $U$ is the internal energy, $P$ is the pressure, and $dV$ is the change in volume. The Cosmological Principle requires that $dQ = 0$. Over a differential of time $dt$, this means that:
+
+$$
+\dot{U} + P\dot{V} = 0
+$$
+
+Now, we want to find proper expressions for the time derivatives of the internal energy and the volume. For that, consider a shpere of comoving radius $r_c$ expanding with the universal Hubble flow, such that its proper radius is $r_p = a(t)r_c$. Then, its volume would be:
+
+$$
+V(t) = \frac{4\pi}{3} r_c^3 a^3(t) \implies \dot{V} = \frac{4\pi}{3} r_c^3 [3 a(t) a^2(t)] = V\bigg(3\frac{\dot{a}}{a} \bigg)
+$$
+
+As for the internal energy $U$:
+
+$$
+U = V \rho(t) c^2 \implies \dot{U} = c^2[V \dot{\rho}(t) + \dot{V}\rho(t)] = c^2V\bigg( \dot{\rho} + 3\rho \frac{\dot{a}}{a} \bigg)
+$$
+
+Using these two, our result from the first law of thermodynamics becomes:
+
+$$
+\dot{\rho} + 3\frac{\dot{a}}{a}\bigg(\rho + \frac{P}{c^2} \bigg) = 0
+$$
+
+Which is known as the **Fluid Equation** or the **Continuity Equation**. The Fluid Equation and the Friedmann Equation together are used for describing the expansion of the Universe. One can physically interpret this equation as providing a type of "energy conservation" in the cosmological context.
+
+We can now try to derive an expression for $\ddot{a}$, that is, an expression for the acceleration of the Universe's expansion. 
 
 # Equations of State and Energy Density Evolution
 ## Matter
