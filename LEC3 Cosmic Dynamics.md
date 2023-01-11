@@ -126,7 +126,31 @@ $$
 
 Which is known as the **Fluid Equation** or the **Continuity Equation**. The Fluid Equation and the Friedmann Equation together are used for describing the expansion of the Universe. One can physically interpret this equation as providing a type of "energy conservation" in the cosmological context.
 
-We can now try to derive an expression for $\ddot{a}$, that is, an expression for the acceleration of the Universe's expansion. 
+We can now try to derive an expression for $\ddot{a}$, that is, an expression for the acceleration of the Universe's expansion. To do that, start with Friedmann's Equation and multiply it by $a^2$:
+
+$$
+\dot{a}^2 = \frac{8 \pi G \rho a^2}{3} - \frac{kc^2}{R_0^2}
+$$
+
+Now take the time derivative:
+
+$$
+2\dot{a}\ddot{a} = \frac{8\pi G}{3}(\dot{\rho}a^2 + 2\dot{a}a\rho)
+$$
+
+Divide by $2\dot{a}{a}$
+
+$$
+\frac{\ddot{a}}{a} = \frac{4\pi G}{3} \bigg( \dot{\rho} \frac{a}{\dot{a}} + 2\rho \bigg)
+$$
+
+Using the Fluid Equation to substitute for the fraction within the parenthesis, finally yields:
+
+$$
+\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\bigg( \rho + \frac{3P}{c^2} \bigg)
+$$
+
+Which is known as the **Acceleration Equation**, and shows that pressure and energy (density) are the sources of gravitational acceleration.
 
 # Equations of State and Energy Density Evolution
 ## Matter
