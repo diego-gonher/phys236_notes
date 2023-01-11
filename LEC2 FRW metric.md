@@ -92,9 +92,95 @@ Where $g_{\mu\nu}$ is known as the metric tensor, which is described by a symmet
 Look at the notes for the entire explanation, but the main idea here is to try and visualize the FWR metric with lower dimensional analogs. Another important thing is that $k$ describes the geometry of the universe being modeled, with $k=-1$ corresponding to a hyperbolic space, $k=0$ corresponding to a flat space and $k=1$ to a spherical space. Observations show that $k=0$ to a high precision in our universe, so we will stick to this value for most of the course. 
 
 # Proper Distance, Redshift, and Hubble Drag
+
 ## Proper Distance
+In an expanding universe, the distance between two objects is increasing with time. We can define a proper distance $r_p$ as the *spacelike* distance (i.e. $dt=0$) between two points. If we assume a constant angle along the geodesinc, then from the FRW metric we get"
+
+$$
+ds^2 = a^2(t)dr^2 \implies ds = a(t)dr
+$$
+
+Here, the proper distance $r_p$ is then the integral of the radial comoving coordinate $r$:
+
+$$
+r_p(t) = \int_0^r a(t)dr' = a(t)r
+$$
+
+Meaning that the comoving coordinate $r$ is independent of time (of course!), while the proper distance $r_p$ does change with time. We can now calculate the rate of change of the proper distance between two points in the following manner:
+
+$$
+v(t) = \dot{r}_p(t) = \dot{a}(t)r = \frac{\dot{a}(t)}{a(t)}r_p = H(t)r_p
+$$
+
+Where in the last two steps we've done something similar to the first section of these notes. That is not a coincidence, in fact it is pretty much the same result but now shown in terms of the metric. This relationship between the proper distance to a galaxy and its recession speed is known as the **Hubble Flow**.
+
 ## Light Propagation and Redshift
+One important consequence from an expanding universe that matters to astronomers is that the light observed has been redshifted as it  has traveled from its source to our detectors. We can express this redshift in terms of the comoving factor $a(t)$. First, consider a ray of light that travels along a null geodesic such that $ds^2=0$. Now imagine that the light is emitted at a time $t=t_{em}$ from a positon $r'=r$ and arrives at position $r'=0$ at time $t=t_{obs}$. Say we orient our coordinate system so that the angles are constant. Then, the FRW metric gives us:
+
+$$
+ds = 0 = - c dt + a(t)dr \implies \frac{cdt}{a(t)} = -dr
+$$
+
+We can integrate both sides and arrive at:
+
+$$
+\int_{t_{em}}^{t_{obs}} \frac{c}{a(t)}dt = - \int_r^0dr = r
+$$
+
+Now consider a second ray of light emitted slightly later at a time $t=t_{em} + \Delta t_{em}$ and observed at a time $t=t_{obs} + \Delta t_{obs}$. Since it is just slightly later, then the distance $r$ is pretty much the same, giving us:
+
+$$
+r = \int_{t_{em} + \Delta t_{em}}^{t_{obs} + \Delta t_{obs}} \frac{c}{a(t)}dt 
+$$
+
+We can manipulate the integral such that:
+
+$$
+\int_{t_{em} + \Delta t_{em}}^{t_{obs} + \Delta t_{obs}} \frac{c}{a(t)}dt = \int_{t_{em}}^{t_{obs}} \frac{c}{a(t)}dt - \int_{t_{em}}^{t_{em} + \Delta t_{em}} \frac{c}{a(t)}dt  + \int_{t_{obs}}^{t_{obs} + \Delta t_{obs}} \frac{c}{a(t)}dt 
+$$
+$$
+\implies \int_{t_{em}}^{t_{obs}} \frac{c}{a(t)}dt - \frac{c\Delta t_{em}}{a(t_{em})} + \frac{c\Delta t_{obs}}{a(t_{obs})}
+$$
+
+Combining the results for both rays of light, we are left with:
+
+$$
+r = \int_{t_{em}}^{t_{obs}} \frac{c}{a(t)}dt =  \int_{t_{em}}^{t_{obs}} \frac{c}{a(t)}dt - \frac{c\Delta t_{em}}{a(t_{em})} + \frac{c\Delta t_{obs}}{a(t_{obs})}
+$$
+
+Which implies:
+
+$$
+\Delta t_{obs} = \frac{a(t_{obs})}{a(t_{em})}\Delta t_{em}
+$$
+
+To relate this to wavelengths, imagine that the small time delay is equal to the time between crests in the electromagnetic wave, such that $\Delta t_{em}$ is equal to the period of the emmited photon $T_{em}$. Since the period is related to the frequency and wavelength of the photon, $T_{em} = 1/\mu_{em} = \lambda_{em}/c$, and choosing $a(t_{obs}) = 1$ (the usual choice to normalize the scale factor at the present epoch), then our previous expression can be rewritten as:
+
+$$
+\lambda_{obs} = \frac{\lambda_{em}}{a(t_{em})} = (1+z)\lambda_{em}
+$$
+
+Where we have defined $a(t_{em}) \equiv 1/(1+z)$. 
+
 ## Peculiar Velocity and Hubble Drag
+In reality, objects in the universe don't comove perfectly with the Hubble flow, and have **peculiar velocities** $v_{pec}$. Thus, the proper velocity of any object with respect to a fundamental observer is given by:
+
+$$
+\textbf{v}_p = \frac{d\textbf{r}_p}{dt} = \frac{d}{dt}\big[ a(t)\textbf{r(t)} \big]
+$$
+
+Using some results from previous sections, we can see that:
+
+$$
+\textbf{v}_p = \dot{a}(t)\textbf{r}(t) + a(t)\dot{\textbf{r}}(t) = \textbf{v}_{exp} + \textbf{v}_{pec}
+$$
+
+Which shouldn't be surprising. Notice that in this case $r$ did have a non-zero derivative since we are taking into account the presence of peculiar velocities. Now consider the situation from the following diagram:
+
+![[lec2fig1.png]]
+
+Here, we have a fundamental observer looking at an object X that moves with a peculiar velocity at time $t$ and a slightly different peculiar velocity at time $t+dt$. 
+
 
 # Horizons
 ## Particle Horizon
