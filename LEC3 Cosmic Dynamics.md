@@ -68,6 +68,31 @@ $$
 
 Where the term in parenthesis is very important, as $\rho$ is taken to be the energy density of anything (that includes mass energy, radiation and vacuum energy), which implies the need of an ecuation of state $P(\rho)$ for each component if we want to solve for the universe's dynamics. 
 
+The second difference is that the solution that uses GR constrains the value for the curvature $k$ to only $\pm 1, 0$, and is determined by the mass energy contents of the universe. This constrain, which has a deep impact on cosmology, cannot be captured in a semi-classical framework of the problem. 
+
+To understand the physical implications of this, it is useful to define a critical density $\rho_c$ and a density parameter $\Omega(t)$:
+
+$$
+\rho_c = \frac{3H^2(t)}{8 \pi G}
+$$
+$$
+\Omega(t) = \frac{\rho}{\rho_c}
+$$
+
+Which allows us to rewrite and rearrange Friedmann's Equation to be:
+
+$$
+k = [\Omega(t) - 1] \bigg( \frac{R_0 a^2(t)}{cH^{-1}(t)} \bigg)^2
+$$
+
+Clearly, the curvature is related to the energy contents, with the three possibilites being:
+
+- **Spatially Open**: if $\Omega(t) < 1$ then $k<0$ and the universe has a negative curvature.
+- **Spatially Closed**: if $\Omega(t) > 1$ then $k>0$ and the universe has a positive curvature.
+- **Spatially Flat**: if $\Omega(t) = 1$ then $k=0$ and the universe has a flat curvature.
+
+The current measurements of the density parameter indicate that $\Omega_0 = 0.999 \pm 0.002$, meaning that our universe is flat, which means that we get to focus on the simplest form of the FRW metric.
+
 # The Fluid Equation
 
 # Equations of State and Energy Density Evolution
