@@ -177,7 +177,7 @@ $$
 
 Which shouldn't be surprising. Notice that in this case $r$ did have a non-zero derivative since we are taking into account the presence of peculiar velocities. Now consider the situation from the following diagram:
 
-![[lec2fig1.png]]
+![[images/lec2fig1.png]]
 
 Here, we have a fundamental observer looking at an object X that moves with a peculiar velocity at time $t$ and a slightly different peculiar velocity at time $t+dt$. We can calculate the effect that the expanding universe has in the object's peculiar velocity by first realizing that the proper velocity $v_p$ must be the same from the fundamental fundamental observer's POV, since there are no forces acting on it from their perspective. That is, $v_p(t) = v_p(t+dt)$. Furthermore, at $t=0$, $v_p(t=0) = v_{pec}(t=0)$ since it is at the fundamental observer's position. 
 
