@@ -153,9 +153,117 @@ $$
 Which is known as the **Acceleration Equation**, and shows that pressure and energy (density) are the sources of gravitational acceleration.
 
 # Equations of State and Energy Density Evolution
+
+So far, we have three equations:
+
+- Friedmann Equation
+$$
+\bigg( \frac{\dot{a}}{a} \bigg)^2 = \frac{8 \pi G \rho}{3} - \frac{kc^2}{R_0^2a^2}
+$$
+- Fluid Equation
+$$
+\dot{\rho} + 3\frac{\dot{a}}{a}\bigg(\rho + \frac{P}{c^2} \bigg) = 0
+$$
+- Acceleration Equation
+$$
+\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\bigg( \rho + \frac{3P}{c^2} \bigg)
+$$
+
+Out of which, only the first two are independent (we used them to derive the third one). However, we have three unkowns: $a(t)$, $\rho(t)$, and $P(t)$, which means we need another piece of information before we are able to solve this problem. 
+
+Specifially, what we need is a function of the pressure in terms of the density $P(\rho)$, where the relationship is determined by the energy contents of the universe. As it turns out, only three components are important: matter, radiation and dark energy. Thus, we can write the total energy density as:
+
+$$
+\rho c^2 = \text{matter} + \text{radiation} + \text{dark energy}
+$$
+$$
+\implies \rho c^2 = \rho_{m}(c^2 + \epsilon) + \frac{4\sigma_{SB}}{c}T^4 + \rho_{da}
+$$
+
+Where $\epsilon = 3k_{b}T_{m}/(2m)$ is the internal energy of the matter per unit mass (in this case for a monoatomic ideal gas). The pressure associated with these energy components is expressed as **an equation of state**. Since we are only dealing with dilute gases in cosmology, these equations of state always take the linear form:
+
+$$
+P(\rho) = w\rho c^2
+$$
+
+Where $w$ is a dimensionless number. Using this in the Fluid Equation gives us:
+
+$$
+\dot{\rho} + 3\frac{\dot{a}}{a}\bigg(\rho + \frac{w\rho c^2}{c^2} \bigg) = \dot{\rho} + 3\frac{\dot{a}}{a}\big(\rho + w\rho \big) = 0
+$$
+$$
+\implies \frac{\dot{\rho}}{\rho} = -3(1+w)\frac{\dot{a}}{a}
+$$
+
+Assuming that $w$ is constant, then this gives us the following solution:
+
+$$
+\rho = \rho_0a^{-3(1+w)}
+$$
+
+Where $\rho_0$ is the density at the present epoch ($a_0=1$). Now we can consider each of the three main components with more detail.
+
 ## Matter
+We can approximate the universe to be an ideal gas consisting of $N$ particles of mass $m$ such that:
+
+$$
+P_mV = Nk_bT
+$$
+$$
+\rho_m = \frac{mN}{V}
+$$
+$$
+\implies P_m = \frac{k_b T}{m} \rho_m
+$$
+
+While it might be tempting to think that because of this $w = k_bT/m$, in reality this isn't quite the answer, because $\rho_m \neq \rho$. To actually get a correct expression, we have to recall that for an ideal gas:
+
+$$
+P_m = (\gamma-1)\rho_m\epsilon
+$$
+
+Where $\gamma=5/3$ for a monoatomic ideal gas. Now, to take into account that the rest-mass energy doesn't contribute to the gas pressure, we can write the pressure as:
+
+$$
+P_m = (\gamma - 1)(\rho c^2 - \rho_m c^2)
+$$
+
+Using this and our first expression for $P_m$ leaves us with:
+
+$$
+P_m = \frac{k_B T}{m c^2}\bigg(1 + \frac{1}{\gamma - 1}\frac{k_BT}{mc^2}  \bigg)^{-1}\rho c
+$$
+$$
+\implies w(T) = \frac{k_B T}{m c^2}\bigg(1 + \frac{1}{\gamma - 1}\frac{k_BT}{mc^2}  \bigg)^{-1}
+$$
+
+Since $k_BT \ll mc^2$ for a non-relativistic gas, we can conclude that $w\ll0$. In fact, we can consider the matter to be a **dust fluid**, with:
+
+$$
+w_{\text{matter}} = 0
+$$
+
 ## Radiation
+We can approximate the radiation's energy density as arising from an ultra-relativistic fluid of particles, for which:
+
+$$
+P = \frac{\rho c^2}{3}
+$$
+$$
+\implies w_{\text{radiation}} = \frac{1}{3}
+$$
+
 ## Dark Energy
+
+
+## Summary
+Here you can see a summary of the three main components in the universe. The rest of the columns were derived using the relationship between density and $a$ (from earlier in these notes), ideal gas relationships, the black body radiation
+
+| Component      | $w$ | $\rho$ | $P$ | $T$ |
+|     :----:     |   :----:   |   :----:   |    :----:   |    :----:   |
+| matter      | 0 | $a^{-3}$ | $a^{-5}$ | $a^{-2}$ |
+| radiation   | 1/3 | $a^{-4}$ | $a^{-4}$ | $a^{-1}$ |
+| vacuum energy   | -1 | $a^{0}$ | $a^{0}$ | |
 
 
 # The Friedmann Equation in terms of $\Omega$s
