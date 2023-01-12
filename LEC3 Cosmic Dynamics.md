@@ -254,7 +254,22 @@ $$
 $$
 
 ## Dark Energy
+Classically, vacuum doesn't have energy. However, quantum fluctuations form particle-antiparticle pairs can create an energy density, which in the case of dark energy, is given by:
 
+$$
+P =-\rho c^2
+$$
+$$
+\implies w_{\text{dark energy}} = -1
+$$
+
+An interesting result of this is that, if we plug this into the acceleration equation, we get:
+
+$$
+\frac{\ddot{a}}{a} = \frac{8\pi G}{3} \rho_{\text{vac}}
+$$
+
+Which means that dark energy acts as a type of *anti-gravity*, accelerating the expansion of the universe.
 
 ## Summary
 Here you can see a summary of the three main components in the universe. The rest of the columns were derived using the relationship between density and $a$ (from earlier in these notes), ideal gas relationships, the black body radiation
@@ -267,3 +282,12 @@ Here you can see a summary of the three main components in the universe. The res
 
 
 # The Friedmann Equation in terms of $\Omega$s
+With the new concepts that we developed in the past section, we can rewrite the Friedmann Equation as the following:
+
+$$
+H^2(t) = \bigg( \frac{\dot{a}}{a} \bigg)^2 = \frac{8\pi G}{3} \big[ \rho_{m,0}a^{-3} + \rho_{r,0}a^{-4} + \rho_{A,0} \big] - \frac{kc^2}{R_0a^2}
+$$
+
+Where the subscript refers to each of the three main components and the denisities are evaluated at the present epoch. 
+
+### THERE IS OTHER WAYS OF EXPRESSING ALL OF THIS WITH MORE OMEGAS AND STUFF, LOOK INTO THE ACTUAL LECTURE NOTES
