@@ -289,7 +289,7 @@ Here you can see a summary of the three main components in the universe. The res
 | vacuum energy   | -1 | $a^{0}$ | $a^{0}$ | |
 
 
-# The Friedmann Equation in terms of $\Omega$s
+# The Friedmann Equation in terms of Density Parameters
 With the new concepts that we developed in the past section, we can rewrite the Friedmann Equation as the following:
 
 $$
