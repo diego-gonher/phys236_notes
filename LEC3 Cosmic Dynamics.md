@@ -272,7 +272,11 @@ $$
 Which means that dark energy acts as a type of *anti-gravity*, accelerating the expansion of the universe.
 
 ## Summary
-Here you can see a summary of the three main components in the universe. The rest of the columns were derived using the relationship between density and $a$ (from earlier in these notes), ideal gas relationships, the black body radiation
+Here you can see a summary of the three main components in the universe. The rest of the columns were derived using:
+
+- **Density**: was derived using the relationship between density and $a$ from earlier in these notes.
+- **Pressure**: equation of state for each thing, the linearized version I believe.
+- **Temperature**: using ideal gas temperature for matter, and black body radiation for radiation.
 
 | Component      | $w$ | $\rho$ | $P$ | $T$ |
 |     :----:     |   :----:   |   :----:   |    :----:   |    :----:   |
