@@ -157,14 +157,17 @@ Which is known as the **Acceleration Equation**, and shows that pressure and ene
 So far, we have three equations:
 
 - Friedmann Equation
+
 $$
 \bigg( \frac{\dot{a}}{a} \bigg)^2 = \frac{8 \pi G \rho}{3} - \frac{kc^2}{R_0^2a^2}
 $$
 - Fluid Equation
+
 $$
 \dot{\rho} + 3\frac{\dot{a}}{a}\bigg(\rho + \frac{P}{c^2} \bigg) = 0
 $$
 - Acceleration Equation
+
 $$
 \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\bigg( \rho + \frac{3P}{c^2} \bigg)
 $$
@@ -277,6 +280,7 @@ Here you can see a summary of the three main components in the universe. The res
 - **Density**: was derived using the relationship between density and $a$ from earlier in these notes.
 - **Pressure**: equation of state for each thing, the linearized version I believe.
 - **Temperature**: using ideal gas temperature for matter, and black body radiation for radiation.
+
 
 | Component      | $w$ | $\rho$ | $P$ | $T$ |
 |     :----:     |   :----:   |   :----:   |    :----:   |    :----:   |
