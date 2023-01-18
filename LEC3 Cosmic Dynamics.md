@@ -237,7 +237,7 @@ $$
 \implies w(T) = \frac{k_B T}{m c^2}\bigg(1 + \frac{1}{\gamma - 1}\frac{k_BT}{mc^2}  \bigg)^{-1}
 $$
 
-Since $k_BT \ll mc^2$ for a non-relativistic gas, we can conclude that $w\ll0$. In fact, we can consider the matter to be a **dust fluid**, with:
+Since $k_BT \ll mc^2$ for a non-relativistic gas, we can conclude that $w\ll1$. In fact, we can consider the matter to be a **dust fluid**, with:
 
 $$
 w_{\text{matter}} = 0

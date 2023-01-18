@@ -207,8 +207,25 @@ $$
 
 Using GR, this result extends to momentum: $p \propto a^{-1}$. 
 
-
-### *DIDN'T GET TO COVER THIS DURING THE LAST LECTURE*
 # Horizons
-## Particle Horizon
-## Event Horizon
+
+The last concept in this lecture is that of horizons. You can recall from Special Relativity that one could build Minkowski Diagrams in which one would plot a distance coordinate in the x-axis and time in the y-axis. With such set up, one could graph the *worldline* of a particle, and could easily visualize that any light emission from a point $p$ would look like a straight line with a 45 degree angle if you choose the speed of light to be $c=1$. This is great, because you could see *light cones*, which simply are the areas in space-time within which all the possible future and past worldlines could be in, given that nothing can travel faster than the speed of light. This also allowed for the creation of two boundaries:
+
+- **Particle Horizon:** its the size of the physical space at a time $t_i$ before the present time $t=0$ delimited by the edges of the past lightcone. Only events within the *particle horizon* can have a causal effect on $p$ at $t=0$.
+- **Event Horizon:** its the size of the physical space at a time $t_f$ after the present time $t=0$ delimited by the edges of the future lightcone. Only events within the *event horizon* can be affected by anything that could happen at $p$ in the present time $t=0$.
+
+However, with the introduction of an expanding universe, Minkowski diagrams would become harder to visualize. To overcome this, we remember that light travles along null geodesics $ds^2=0$, and thus, from the FRW metric:
+
+$$
+\frac{cdt}{a(t)} = dr
+$$
+
+Now, we can do a change of variables by defining the **conformal time** $\tau$ as:
+
+$$
+d\tau = \frac{dt}{a(t)}
+$$
+Doing so, we can again have nice, simple visualizations like the Minkowski Diagram if we plot the **comoving distance** on the x-axis, and the **conformal time** in the y-axis, as shown in the following diagram:
+
+![Lec2Fig1](images/lec2fig2.png)
+
