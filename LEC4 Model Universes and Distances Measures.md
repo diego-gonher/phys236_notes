@@ -35,7 +35,24 @@ $$
 \rho_\gamma c^2 = \frac{4\sigma_{SB}T^4}{c} \implies \rho_{\gamma, 0} \approx 5.1 \times10^{-5}
 $$
 
+However, as we just stated, photons aren't the only particles that contribute to this component. Radiation from starlight is in total about an order of magnitude less than the CMB, so we don't need to take it into account. Neutrinos, however, are relevant. Just like the CMB occured after the universe stopped being opaque for photons, there is an equivalent event at a higher redshift in which the universe stopped being opaque for neutrinos, allowing for the neutrino decoupling and causing an equivalent background of relic cosmic neutrinos that we can treat as "radiation" since their mass is small enough to remain relativistic. As we'll see in [[LEC5-7 Thermal History]], one can derive a relationship between the temperature of these relic neutrinos and the temperature of the CMB, which can then be used to calculate the corersponding energy density $\rho_\nu$, which ends up being relevant, allowing us to finally find that:
+
+$$
+\rho_{r,0} = 7.8 \times 10^{-34} g \hspace{0.1cm}cm^{-3} \implies \Omega_{r,0} = 8.6 \times 10^{-5}
+$$
+
 ## Matter Radiation Equality
+Even though at present time $\Omega_{r,0} \ll \Omega_{m,0}$ is the case, we would expect a time in which radiation dominated over matter given how their densities scale with the expansion of the universe ($\propto a^{-4}$ and $\propto a^{-3}$ respectively). We can actually determine the redshift at which the transition from radiation-dominated to matter-dominated occurred by doing:
+
+$$
+\rho_{m,0}a^{-3} = \rho_{r,0}a^{-4} \implies a_{eq} = \frac{1}{1+z_{eq}} = \frac{\rho_{r,0}}{\rho_{m,0}} = \frac{\Omega_{r,0}}{\Omega_{m,0}}
+$$
+
+Which, using current values, gives:
+
+$$
+z_{eq} \approx 3400
+$$
 
 ## Coincidence Problem
 
