@@ -69,6 +69,10 @@ $$
 
 Since this is very recent, some have argued that it is a little suspicious, and this is known as the **Coincidence Problem**, though not a lot of astronomers give it much of a thoght.
 
+Here are a couple of plots that illustrate the transitions from radiation-dominated to matter-dominated and then from matter-dominated to dark energy-dominated:
+
+![Lec2Fig1](images/lec4fig1.png)
+
 # Model Universes
 If you want to correctly model the expansion of the universe, we clearly have to consider the solutions for the Friedmann Equation using all the relevant components of universe's energy budget. Nevertheless, it is useful to consider simple models of flat universes with only one of the three most important components, as their solutions are analytic and easier to understand.
 
