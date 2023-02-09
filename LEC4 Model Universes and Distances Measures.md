@@ -100,11 +100,36 @@ $$
 Where $t_0$ is a constant that depends on $w$ and $\rho_{X,0}$. We can use this to understand some of these simple model universes.
 
 ## Radiation Dominated
+Using $w=1/2$, we get that:
+
+$$
+a(t) \propto t^{1/2}
+$$
+
+This is valid for $z\ll z_{eq}$.
 
 ## Matter Dominated
+For matter, $w=0$, and thus:
+
+$$
+a(t) \propto t^{2/3}
+$$
+
+This is valid for $z_{eq} \ll z$ and $z\ll z_{m\Lambda}$.
 
 ## Lambda Dominated
+For dark energy, we need a more careful approach. Since $w=-1$, the Friedmann Equation becomes:
 
+$$
+\bigg( \frac{\dot{a}}{a} \bigg)^2 = H_0^2 \Omega_{\Lambda,0}
+$$
 
+Which can be solved without the need of a power law. In this case, we get that:
+
+$$
+a(t) = a_0 e^{H_0\Omega_{\Lambda,0}^{1/2}(t-t_0)}
+$$
+
+Which shows that the expansion of the universe is accelerating exponentially.
 
 
