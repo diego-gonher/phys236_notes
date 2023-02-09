@@ -55,8 +55,45 @@ z_{eq} \approx 3400
 $$
 
 ## Coincidence Problem
+Since currently the universe is dominated by the dark energy, we can similarly calculate the redshift at which the transition from the matter-dominated universe occurred:
+
+$$
+\rho_{m,0}a^{-3} = \rho_\Lambda
+$$
+
+Following a similar procedure, we can estimate the redshift of this transition to be:
+
+$$
+z_{m\Lambda} \approx 0.33
+$$
+
+Since this is very recent, some have argued that it is a little suspicious, and this is known as the **Coincidence Problem**, though not a lot of astronomers give it much of a thoght.
 
 # Model Universes
+If you want to correctly model the expansion of the universe, we clearly have to consider the solutions for the Friedmann Equation using all the relevant components of universe's energy budget. Nevertheless, it is useful to consider simple models of flat universes with only one of the three most important components, as their solutions are analytic and easier to understand.
+
+Remember from [[LEC3 Cosmic Dynamics]] that considering linear equations of state parametrized by variable $w$, the density $\rho_X$ of a single substance $X$ scales as:
+
+$$
+\rho_X \propto a^{-3(1+w)}
+$$
+
+Using the Friedmann Equation at the start of these notes, we find that the expansion of this single-component universe simplifies to:
+
+$$
+H^2(a) = \bigg( \frac{\dot{a}}{a} \bigg)^2 = H_0^2 \Omega_{X,0} a^{-3(1+w)}
+$$
+$$
+\implies \dot{a}^2 = H_0^2\Omega_{X,0}a^{-(1+3w)}
+$$
+
+To solve this equation, we assume a power law such that:
+
+$$
+a(t) = \bigg( \frac{t}{t_0} \bigg)^q, \hspace{0.5cm} q = \frac{2}{2+3w}
+$$
+
+Where $t_0$ is a constant that depends on $w$ and $\rho_{X,0}$. We can use this to understand some of these simple model universes.
 
 ## Radiation Dominated
 
