@@ -132,4 +132,37 @@ $$
 
 Which shows that the expansion of the universe is accelerating exponentially.
 
+# Distance Measures in Cosmology
+Measuring distance and time can be a little tricky in an expanding universe, so here are some measures that are typically used in cosmology.
+
+## The Line-of-Sight Comoving Distance
+Remember that one can relate a differential of proper distance $\delta r_p$ (actual physical distance you would measure) to a comoving distance $\delta r$ (a distance that is defined with the expansion factor) with the following expression:
+
+$$
+\delta r = \frac{\delta r_p}{a(t_e)} = (1+z_e) \delta r_p
+$$
+
+The total line-of-sight comoving distance is defined as integrating all these small differentials $\delta r$ between closeby events, between the object of emission and the observer. In other words, it is integrating along the null geodesic ($ds^2=0$), which from the FRW metric is:
+
+$$
+d_c = \int dr = \int_{t_e}^{t_0} \frac{cdt}{a(t)}
+$$
+
+Using the chain rule, we can rewrite $dt/a(t)$ and find the following:
+
+$$
+d_c = c\int_0^z \frac{dz'}{H(z')} = d_H \int_0^z \frac{dz'}{E(z')} 
+$$
+
+Where $d_H$ is the Hubble distance, and $E(z)$ is defined as before in this lecture. **Note that the line-of-sight distance is not directly observable, but it is useful to define some of the other measures that we'll explore**.
+
+## Angular Diameter Distance
+
+## Luminosity Distance
+
+## Lookback Time
+
+## Comoving Volume
+
+
 
